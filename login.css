@@ -40,7 +40,12 @@ body{
     position: absolute;
 } 
 
+
 .flip-inner .back{
+    transform: rotateY(180deg);
+}
+
+.reg:active .flip-inner{
     transform: rotateY(180deg);
 }
 
@@ -99,7 +104,6 @@ body{
 	position: relative;
 	margin-top: 15px;
 	margin-bottom: 25px;
-    position: relative;
 }
 .floating-label {
     font-size: 16px;
@@ -131,6 +135,17 @@ input:not(:focus):valid ~ .floating-label {
     max-width: 27rem;
 }
 
+.custom-input-2{
+    height: 3rem;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: 1px solid rgb(102, 99, 99);
+    display: inline;
+    min-width: 23rem;
+    width: 27vw;
+    max-width: 27rem;
+}
+
 .custom-input:focus {
     border: 1px solid black;
     outline: none;
@@ -155,7 +170,12 @@ input:not(:focus):valid ~ .floating-label {
 }
 
 .pass-con{
+    position: relative;
     margin-bottom: 0;
+}
+
+.reg-con{
+
 }
 
 .btn-style{
@@ -184,6 +204,16 @@ input:not(:focus):valid ~ .floating-label {
         padding-left: 35px;
         padding-right: 35px;
         border: 1px solid rgb(102, 99, 99);
+        width: 80%;
+    }
+
+    .reg-con{
+        max-height: 2rem;
+        max-width: 80%;
+    }
+
+    .custom-input-2{
+        height: 2rem;
         width: 80%;
     }
 

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/login.css">
 </head>
 <body>
-    <input type="checkbox" id="Mycheckbox" class = "register"/>
     <div class="page">
         <div class="flip">
             <div class="flip-inner">
@@ -69,7 +68,7 @@
                             <div class="text-center mt-2">
                                 <p class="d-inline">Dont have an Account?</p>
                                 <label for="Mycheckbox">
-                                    <p class="reg">Register</p>
+                                    <p class="reg" id="register">Register</p>
                                 </label>
                             </div>
                         </form>
@@ -78,11 +77,6 @@
                 <div class="login-container back mx-auto p-2">
                     <div class="p-0 imgslide">
                         <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                              </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="/images/img5.jpg" class="d-block w-100 com-img" alt="...">
@@ -106,46 +100,63 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
                         </div>
                     </div>
-                    <div class="p-0 login-form p-2 pt-4">
+                    <div class="p-0 login-form p-2 pt-0">
                         <img src="/icons/logo3.png" class = "logo-img" alt="">
-                        <h1 class="msg">Welcome Back!</h1>
+                        <h1 class="msg mt-0">Hello!</h1>
                         <form action="login">
-                            <div class="floating-label-group">
-                                <img src="/icons/user.svg" class="username-img" alt="">
-                                <input type="text" id="username" class="form-control custom-input" autocomplete="off" autofocus required />
-                                <label class="floating-label">Username</label>
-                
+                            <div class="d-flex flex-row reg-con">
+                                <div class="floating-label-group mb-0">
+                                    <img src="/icons/user.svg" class="username-img" alt="">
+                                    <input type="text" id="username" class="form-control me-2 custom-input-2" autocomplete="off" autofocus required />
+                                    <label class="floating-label">Username</label>
+                                </div>
+                                <div class="floating-label-group mb-0">
+                                    <img src="/icons/mail.svg" class="username-img" alt="">
+                                    <input type="text" id="username" class="form-control custom-input-2" autocomplete="off" autofocus required />
+                                    <label class="floating-label">Email</label>
+                                </div>
                             </div>
+
+                            <div class="d-flex flex-row reg-con">
+                                <div class="floating-label-group mb-0">
+                                    <img src="/icons/phone.svg" class="username-img" alt="">
+                                    <input type="text" id="username" class="form-control me-2 custom-input-2" autocomplete="off" autofocus required />
+                                    <label class="floating-label">Mobile Number</label>
+                                </div>
+                                <div class="floating-label-group mb-0">
+                                    <img src="/icons/calendar.svg" class="username-img" alt="">
+                                    <input type="date" id="username" class="form-control custom-input-2 pe-1" autocomplete="off" autofocus required />
+                                </div>
+                            </div>
+
                             <div class="floating-label-group pass-con">
                                 <img src="/icons/lock.svg" class="username-img" alt="">
-                                <input type="password" id="password" class="form-control custom-input" autocomplete="off" autofocus required />
+                                <input type="password" id="reg-password" class="form-control custom-input" autocomplete="off" autofocus required />
                                 <label class="floating-label">Password</label>
-                                <img src="/icons/eye-off.svg" class = "password-view" alt="">
+                                <img src="/icons/eye-off.svg" class = "password-view" id="reg-pass-view" alt="">
+                            </div>
+
+                            <div class="floating-label-group pass-con">
+                                <img src="/icons/lock.svg" class="username-img" alt="">
+                                <input type="password" id="reg-confpassword" class="form-control custom-input" autocomplete="off" autofocus required />
+                                <label class="floating-label">Confirm Password</label>
+                                <img src="/icons/eye-off.svg" class = "password-view" id="reg-confpass-view" alt="">
                             </div>
                             <div class="ran">
                                 <div>
                                     <input type="checkbox">
                                     <label>Remember me</label>
                                 </div>
-                                <a href="" class = "forgot">Forgot Password</a>
                             </div>
                             <div class = "btn-style mt-4">
                                 <button class="btn btn-dark submit">Submit</button>
                             </div>
                             <div class="text-center mt-2">
-                                <p class="d-inline">Dont have an Account?</p>
+                                <p class="d-inline">Already have an Account?</p>
                                 <label for="Mycheckbox">
-                                    <p class="reg">Login</p>
+                                    <p class="reg" id="login">Login</p>
                                 </label>
                             </div>
                         </form>
