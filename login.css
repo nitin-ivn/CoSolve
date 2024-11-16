@@ -141,9 +141,6 @@ input:not(:focus):valid ~ .floating-label {
     padding-right: 35px;
     border: 1px solid rgb(102, 99, 99);
     display: inline;
-    min-width: 23rem;
-    width: 27vw;
-    max-width: 27rem;
 }
 
 .custom-input:focus {
@@ -175,7 +172,10 @@ input:not(:focus):valid ~ .floating-label {
 }
 
 .reg-con{
-
+    flex-wrap: nowrap;
+    min-width: 23rem;
+    width: 27vw;
+    max-width: 27rem;
 }
 
 .btn-style{
