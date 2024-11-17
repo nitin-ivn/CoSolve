@@ -49,9 +49,9 @@ reg_confeye.addEventListener("click", () => {
 
 let flip = document.querySelector(".flip-inner");
 document.getElementById("register").addEventListener('click', () => {
-    flip.style.transform = "rotateY(180deg)";
+    flip.style.transform = "rotateY(-180deg)";
 });
 
 document.getElementById("login").addEventListener('click', () => {
-    flip.style.transform = "rotateY(360deg)";
+    flip.style.transform = "rotateY(0deg)";
 });

@@ -1,0 +1,6 @@
+.root {
+  background-image: url('./assets/home/bg.webp');
+  background-repeat: repeat-y;
+  min-height: 100vh;
+  max-height: fit-content;
+}

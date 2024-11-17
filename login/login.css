@@ -14,7 +14,6 @@ body{
 
 .flip{
     position: relative;
-    transition: all 0.5s ease-in-out;
     
     max-width: 1000px;
     width: 1000px;
@@ -31,21 +30,15 @@ body{
     transform-style: preserve-3d;
 }
 
-.register:checked + .flip .flip-inner{
-    transform: rotateY(-180deg);
-}
-
 .flip-inner .front,
 .flip-inner .back{
     position: absolute;
 } 
 
 
-.flip-inner .back{
-    transform: rotateY(180deg);
-}
 
-.reg:active .flip-inner{
+.flip-inner .back{
+    
     transform: rotateY(180deg);
 }
 
@@ -105,6 +98,8 @@ body{
 	margin-top: 15px;
 	margin-bottom: 25px;
 }
+
+
 .floating-label {
     font-size: 16px;
     color: #cccccc;
@@ -136,11 +131,20 @@ input:not(:focus):valid ~ .floating-label {
 }
 
 .custom-input-2{
+    display: inline;
     height: 3rem;
     padding-left: 35px;
     padding-right: 35px;
     border: 1px solid rgb(102, 99, 99);
-    display: inline;
+    min-width: 11rem;
+    width: 13vw;
+    max-width: 13rem;
+}
+
+.inp{
+    min-width: 23rem;
+    width: 27vw;
+    max-width: 27rem; 
 }
 
 .custom-input:focus {
@@ -169,13 +173,6 @@ input:not(:focus):valid ~ .floating-label {
 .pass-con{
     position: relative;
     margin-bottom: 0;
-}
-
-.reg-con{
-    flex-wrap: nowrap;
-    min-width: 23rem;
-    width: 27vw;
-    max-width: 27rem;
 }
 
 .btn-style{
@@ -207,9 +204,20 @@ input:not(:focus):valid ~ .floating-label {
         width: 80%;
     }
 
+    .custom-input-2{
+        height: 2rem;
+        max-width: 10vw;
+    }
+
+    .inp{
+        height: 3rem;
+        width: 40%;
+        max-width: 40%;
+    }
+
     .reg-con{
         max-height: 2rem;
-        max-width: 80%;
+        min-width: none;
     }
 
     .custom-input-2{
@@ -256,6 +264,10 @@ input:not(:focus):valid ~ .floating-label {
 
     .custom-input{
         min-width: 80vw;
+    }
+
+    .custom-input-2{
+        min-width: 39vw;
     }
 
     .login-form{
