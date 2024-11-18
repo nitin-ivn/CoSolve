@@ -1,0 +1,99 @@
+.contact-con{
+    background: linear-gradient(135deg, rgba(255,255,255,0.1, rgba(255,255,255,0)));
+    backdrop-filter: blur(10px);
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 35vw;
+    animation: slideLeft 1s ease-in forwards;
+}
+
+.contact-per{
+    animation: slideRight 1s ease-in forwards;
+}
+
+@keyframes slideLeft {
+    from{
+        opacity: 0;
+        transform: translateX(-300px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes slideRight {
+    from{
+        opacity: 0;
+        transform: translateX(300px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.username-img{
+    left: 5px;
+    position: absolute;
+    bottom: 13px;
+}
+
+.floating-label-group {
+	position: relative;
+    margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+
+.floating-label {
+    font-size: 16px;
+    color: #535151;
+    position: absolute;
+    pointer-events: none;
+    top: 9px;
+    left: 35px;
+    transition: all 0.5s ease;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+    top: -25px;
+    bottom: 0px;
+    left: 0px;
+    font-size: 11px;
+    opacity: 1;
+    color: white;
+}
+
+textarea:focus ~ .floating-label,
+textarea:not(:focus):valid ~ .floating-label {
+    top: -25px;
+    bottom: 0px;
+    left: 0px;
+    font-size: 11px;
+    opacity: 1;
+    color: white;
+}
+
+.custom-input {
+    height: 3rem;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: 1px solid rgb(102, 99, 99);
+    min-width: 25vw;
+    width: 25vw;
+    max-width: 27vw;
+}
+
+.txt-area{
+    height: 15vh;
+    padding-left: 0px;
+}

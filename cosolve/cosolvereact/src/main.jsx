@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route,RouterProvider,createBrowserRouter,
   createRoutesFromElements } from 'react-router-dom'
 import Layout from './Layout.jsx'
-import { About, Contact, CreatePost, Home, Ongoing, Profile } from './components/index.js';
+import { About, Contact, CreatePost, Home, Ongoing, Profile,PostPage } from './components/index.js';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,7 +17,7 @@ const router = createBrowserRouter(
       <Route path='profile' element = {<Profile />} />
       <Route path='ongoing' element  = {<Ongoing />} />
       <Route path='create' element  = {<CreatePost />} />
-
+      <Route path='post/:postid' element = {<PostPage />} />
     </Route>
   )
 )

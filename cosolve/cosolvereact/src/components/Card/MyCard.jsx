@@ -2,6 +2,7 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './MyCard.css'
+import { NavLink } from 'react-router-dom';
 
 function MyCard(props) {
   return (
@@ -13,7 +14,7 @@ function MyCard(props) {
           Location: Hyderabad<br />
           Status: Active 
         </Card.Text>
-        <Button className='w-100' variant="light">Details</Button>
+        <NavLink to='/post/123' className='w-100 btn btn-light'>Details</NavLink>
       </Card.Body>
     </Card>
   )

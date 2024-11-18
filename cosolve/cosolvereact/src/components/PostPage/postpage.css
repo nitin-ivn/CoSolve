@@ -1,0 +1,59 @@
+.detail{
+    width: 40vw;
+    animation: slideLeft 1s ease-in forwards;
+}
+
+.post-img{
+    width: 30vw;
+    animation: slideRight 1s ease-in forwards;
+}
+
+@keyframes slideLeft {
+    from{
+        opacity: 0;
+        transform: translateX(-300px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideRight {
+    from{
+        opacity: 0;
+        transform: translateX(300px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.book-det{
+    background-color: transparent;
+}
+
+
+.button{
+    animation: slideDown 1s ease-in forwards;
+}
+
+@keyframes slideDown {
+    from{
+        opacity: 0;
+        transform: translateY(-300px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.user{
+    text-decoration: none;
+    cursor: pointer;
+}
