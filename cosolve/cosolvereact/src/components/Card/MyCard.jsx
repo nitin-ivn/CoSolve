@@ -14,7 +14,13 @@ function MyCard(props) {
           Location: Hyderabad<br />
           Status: Active 
         </Card.Text>
-        <NavLink to='/post/123' className='w-100 btn btn-light'>Details</NavLink>
+        {props.MyPost ? (
+          <NavLink to='/post/123' className='w-100 btn btn-light'>
+            Details
+          </NavLink>
+        ) : (
+          <button className='w-100 btn btn-success'>Completed</button>
+        )}
       </Card.Body>
     </Card>
   )

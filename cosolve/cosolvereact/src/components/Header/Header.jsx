@@ -13,7 +13,7 @@ function Header() {
           <Nav className="mx-auto">
             <Nav.Item className="me-5">
               <NavLink
-                to="/"
+                to=""
                 className={({ isActive }) => (isActive ? "text-light" : "")}
                 style={{ fontSize: "1.2rem" }}
               >
@@ -22,7 +22,7 @@ function Header() {
             </Nav.Item>
             <Nav.Item className="me-5">
               <NavLink
-                to="/about"
+                to="/home/about"
                 className={({ isActive }) => (isActive ? "text-light" : "")}
                 style={{ fontSize: "1.2rem" }}
               >
@@ -31,7 +31,7 @@ function Header() {
             </Nav.Item>
             <Nav.Item className="me-4">
               <NavLink
-                to="/contact"
+                to="/home/contact"
                 className={({ isActive }) => (isActive ? "text-light" : "")}
                 style={{ fontSize: "1.2rem" }}
               >
@@ -52,7 +52,7 @@ function Header() {
             <Dropdown.Menu className="dropdown-menu-dark">
               <Dropdown.Item>
                 <NavLink
-                  to="/create"
+                  to="/home/create"
                   className={({ isActive }) => (isActive ? "text-light" : "")}
                 >
                   Create Post
@@ -60,7 +60,7 @@ function Header() {
               </Dropdown.Item>
               <Dropdown.Item>
                 <NavLink
-                  to="/ongoing"
+                  to="/home/ongoing"
                   className={({ isActive }) => (isActive ? "text-light" : "")}
                 >
                   Ongoing
@@ -68,10 +68,18 @@ function Header() {
               </Dropdown.Item>
               <Dropdown.Item>
                 <NavLink
-                  to="/profile"
+                  to="/home/profile"
                   className={({ isActive }) => (isActive ? "text-light" : "")}
                 >
                   Profile
+                </NavLink>
+              </Dropdown.Item>
+              <Dropdown.Item>
+                <NavLink
+                  to="/"
+                  className="text-danger"
+                >
+                  LogOut
                 </NavLink>
               </Dropdown.Item>
             </Dropdown.Menu>

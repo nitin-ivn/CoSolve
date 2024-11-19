@@ -3,14 +3,16 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Route,RouterProvider,createBrowserRouter,
+import { Route,RouterProvider,Routes,createBrowserRouter,
   createRoutesFromElements } from 'react-router-dom'
 import Layout from './Layout.jsx'
-import { About, Contact, CreatePost, Home, Ongoing, Profile,PostPage } from './components/index.js';
+import { About, Contact, CreatePost, Home, Ongoing, Profile,PostPage, LoginPage } from './components/index.js';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element = {<Layout />}>
+    <>
+    <Route path='/' element = {<LoginPage />} />
+    <Route path='home' element = {<Layout />}>
       <Route path='' element  = {<Home />} />
       <Route path='about' element = {<About />} />
       <Route path='contact' element = {<Contact />} />
@@ -19,6 +21,7 @@ const router = createBrowserRouter(
       <Route path='create' element  = {<CreatePost />} />
       <Route path='post/:postid' element = {<PostPage />} />
     </Route>
+    </>
   )
 )
 

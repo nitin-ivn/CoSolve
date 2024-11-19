@@ -47,11 +47,11 @@ function Home() {
                 </select>
             </div>
             <div className='d-flex flex-row post-card'>
-                <MyCard title= "Vehicle"/>
-                <MyCard title= "Other"/>
-                <MyCard title= "Volunteer"/>
-                <MyCard title= "Man Power"/>
-                <MyCard title= "Vehicle"/>
+                <MyCard title= "Vehicle" MyPost = {false}/>
+                <MyCard title= "Other" MyPost = {false}/>
+                <MyCard title= "Volunteer" MyPost = {false}/>
+                <MyCard title= "Man Power" MyPost = {false}/>
+                <MyCard title= "Vehicle" MyPost = {false}/>
             </div>
         </div>
     </div>
