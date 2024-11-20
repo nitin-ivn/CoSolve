@@ -1,9 +1,13 @@
-.abt-details{
-    width: 50vw;
+.abt-details-1{
+    width: 24vw;
+}
+
+.abt-details-2{
+    width: 24vw;
 }
 
 .cards{
-    width: 30vw;
+    width: 50vw;
 }
 
 .abt-title{

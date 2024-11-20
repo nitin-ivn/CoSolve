@@ -7,5 +7,7 @@ import Ongoing from "./Ongoing/Ongoing";
 import CreatePost from "./CreatePost/CreatePost";
 import PostPage from "./PostPage/PostPage";
 import LoginPage from "./LoginPage/LoginPage";
+import EditProfile from "./EditProfile/EditProfile";
+import Background from "./Background/Background";
 
-export {Header, Contact,Home,About,Profile,Ongoing,CreatePost,PostPage,LoginPage}
+export {Header, Contact,Home,About,Profile,Ongoing,CreatePost,PostPage,LoginPage,EditProfile,Background}

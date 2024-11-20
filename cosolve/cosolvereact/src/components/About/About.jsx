@@ -4,29 +4,25 @@ import './about.css'
 function About() {
   return (
     <div className='aboutpage text-light'>
-      <div className='w-100 d-flex justify-content-center mt-2'>
-        <h1>About Us</h1>
-      </div>
-      <div className='con px-4 slideleft d-flex flex-row justify-content-center'>
-        <div className='abt-details pe-5'>
+      <div className='w-100 d-flex flex-column align-items-center mt-2'>
         <h1 className='mb-0 abt-title'>CoSolve</h1>
         <p className=''>Bringing the world with collaborative solution</p>
-
-        <p className="text-white">
-        At CoSolve, we believe in harnessing the power of connection to solve real-life problems. Our platform is designed to bridge gaps, bringing people together to share resources, skills, and opportunities. Whether you're looking to carpool, rent a vehicle, collaborate on a project, or simply help someone in need, CoSolve offers a seamless and intuitive way to connect with like-minded individuals.
-        </p>
-        <p className="text-white">
-        We aim to create a community-driven ecosystem where everyone can benefit from shared resources and mutual collaboration. By leveraging technology, we aspire to build meaningful networks that empower individuals to solve daily challenges efficiently.
-        </p>
-        <p className="text-white">
-        We believe in the strength of shared purpose and the incredible outcomes that arise when individuals unite to overcome challenges. Our platform is not just a tool for connection; it's a catalyst for empowerment, where people with diverse talents and needs come together to create meaningful solutions. By fostering collaboration and enabling mutual growth, we aim to transform everyday problems into opportunities for innovation and lasting impact.
-        </p>
-        <p className="text-white">
-        Join us in creating a future where collaboration meets innovation!
-        </p>
+      </div>
+      <div className='con px-4 slideleft d-flex flex-column align-items-center'>
+        <div className='d-flex flex-row gap-2'>
+          <div className='abt-details-1 pe-5'>
+            <p className="text-white">
+            At CoSolve, we believe in harnessing the power of connection to solve real-life problems. Our platform is designed to bridge gaps, bringing people together to share resources, skills, and opportunities. Whether you're looking to carpool, rent a vehicle, collaborate on a project, or simply help someone in need, CoSolve offers a seamless and intuitive way to connect with like-minded individuals.
+            </p>
+          </div>
+          <div className='abt-details-2'>
+            <p className="text-white">
+            We believe in the strength of shared purpose and the incredible outcomes that arise when individuals unite to overcome challenges. Our platform is not just a tool for connection; it's a catalyst for empowerment, where people with diverse talents and needs come together to create meaningful solutions. By fostering collaboration and enabling mutual growth, we aim to transform everyday problems into opportunities for innovation and lasting impact.
+            </p>
+          </div>
         </div>
 
-        <div className='cards slideright d-flex flex-column gap-3 p-2'>
+        <div className='cards gap-2 slideright d-flex flex-row-3 p-2'>
           <div className="glass">
             <div className="card border-light glass text-light text-center h-100">
               <div className="card-body">

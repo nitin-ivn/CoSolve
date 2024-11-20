@@ -1,0 +1,11 @@
+.background-container {
+    position: fixed;     
+    top: 0;                    
+    left: 0;                   
+    z-index: -1;               
+    min-height: 100vh;             
+    min-width: 100vw;              
+    background-color: black !important;
+    background: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(56, 54, 185, 0.3), rgba(255, 255, 255, 0));
+
+  }

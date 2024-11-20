@@ -9,7 +9,7 @@ function Contact() {
         <div className='contact'>
           <h1>Contact</h1>
           <form action="feedback">
-            <div className="floating-label-group pass-con">
+          <div className="floating-label-group pass-con">
                 <img src="/icons/user.svg" className="username-img" alt="" />
                 <input type="text" className="form-control custom-input" autoComplete="off" autoFocus required />
                 <label className="floating-label">Name</label>
