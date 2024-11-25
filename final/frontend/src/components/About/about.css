@@ -1,0 +1,53 @@
+.abt-details-1{
+  width: 24vw;
+}
+
+.abt-details-2{
+  width: 24vw;
+}
+
+.cards{
+  width: 50vw;
+}
+
+.abt-title{
+  font-size: 5vw;
+}
+
+.glass{
+  background: linear-gradient(135deg, rgba(255,255,255,0), rgba(255,255,255,0));
+  backdrop-filter: blur(10px);
+}
+
+.slideleft{
+  animation: slideLeft 1s ease-in forwards;
+}
+
+.slideright{
+  animation: sliderightCustom 1s ease-in forwards;
+}
+
+
+@keyframes slideLeft {
+  from{
+      opacity: 0;
+      transform: translateX(-300px)
+  }
+
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+
+@keyframes sliderightCustom {
+  from{
+      opacity: 0;
+      transform: translateX(300px)
+  }
+
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}

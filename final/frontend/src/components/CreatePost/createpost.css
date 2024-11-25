@@ -1,0 +1,49 @@
+.post-image{
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.post-details{
+  width: 40vw;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.img-preview{
+  border: 1px solid white;
+  width: 25vw;
+  height: 20vw;
+}
+
+.preimg{
+  background-color: transparent;
+  min-height: 100%;
+  min-width: 100%
+}
+
+.custom-drp{
+  min-width: 23rem;
+}
+
+@keyframes customslideDown{
+  from{
+      opacity: 0;
+      transform: translateY(100px);
+  }
+
+  to{
+      opacity: 1;
+      transform: translateY(0)
+  }
+}
+
+.custom-slidedown{
+  animation: customslideDown 1s ease-in forwards;
+}

@@ -1,0 +1,33 @@
+.edit-con{
+  width: 70vw;
+}
+
+.profile-img{
+  overflow: hidden;
+}
+
+.prof-img{
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.profile-form{
+width: 30vw;
+}
+
+.custom-input-2{
+  display: inline;
+  height: 3rem;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: 1px solid rgb(102, 99, 99);
+  min-width: 11rem;
+  width: 12vw;
+  max-width: 13rem;
+}
+
+.dob{
+  margin-top: 0.9rem;
+}

@@ -1,0 +1,287 @@
+body{
+  margin: 0;
+  height: 100vh;
+  background-color: #E3E6E6;
+}
+
+.page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.flip{
+  position: relative;
+  
+  max-width: 1000px;
+  width: 1000px;
+  height: 90vh;
+  border-radius: 10px;
+  perspective: 1000px;
+}
+
+.flip-inner{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-inner .front,
+.flip-inner .back{
+  position: absolute;
+} 
+
+
+
+.flip-inner .back{
+  
+  transform: rotateY(180deg);
+}
+
+.reg{
+  cursor: pointer;
+  color: rgb(13, 110, 253);
+  text-decoration: underline;
+}
+
+.reg:active{
+  color: red;
+}
+
+.login-container{
+  /* background-color: #30243c; */
+  backface-visibility: hidden;
+  background-color: white; 
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  width: 1000px;
+  height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 5px white;
+}
+
+.imgslide{
+  width: 50%;
+}
+
+.login-form{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.com-img{
+  max-height: 86vh;
+  border-radius: 6px;
+
+}
+
+.com-title{
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: -20px
+}
+
+.logo-img{
+  width: 13rem;
+  display: inline-block;
+}
+
+.floating-label-group {
+position: relative;
+margin-top: 15px;
+margin-bottom: 25px;
+}
+
+
+.floating-label {
+  font-size: 16px;
+  color: #cccccc;
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
+  left: 35px;
+  transition: all 0.5s ease;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+  top: -20px;
+  bottom: 0px;
+  left: 0px;
+  font-size: 11px;
+  opacity: 1;
+  color: #404040;
+}
+
+.custom-input {
+  height: 3rem;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: 1px solid rgb(102, 99, 99);
+  min-width: 23rem;
+  width: 27vw;
+  max-width: 27rem;
+}
+
+.custom-input-2{
+  display: inline;
+  height: 3rem;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: 1px solid rgb(102, 99, 99);
+  min-width: 11rem;
+  width: 13vw;
+  max-width: 13rem;
+}
+
+.inp{
+  min-width: 23rem;
+  width: 27vw;
+  max-width: 27rem; 
+}
+
+.custom-input:focus {
+  border: 1px solid black;
+  outline: none;
+  box-shadow: 0px 0px 2px 0px black;
+}
+
+.username-img{
+  left: 5px;
+  position: absolute;
+  bottom: 13px;
+}
+
+.password-view{
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+}
+
+.submit{
+  width: 10rem;
+}
+
+.pass-con{
+  position: relative;
+  margin-bottom: 0;
+}
+
+.btn-style{
+  display: flex;
+  justify-content: center;
+}
+
+.ran{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 580px){
+  .ran{
+      margin-top: 2px;
+      font-size: 12px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .custom-input{
+      height: 2rem;
+      padding-left: 35px;
+      padding-right: 35px;
+      border: 1px solid rgb(102, 99, 99);
+      width: 80%;
+  }
+
+  .custom-input-2{
+      height: 2rem;
+      max-width: 10vw;
+  }
+
+  .inp{
+      height: 3rem;
+      width: 40%;
+      max-width: 40%;
+  }
+
+  .reg-con{
+      max-height: 2rem;
+      min-width: none;
+  }
+
+  .custom-input-2{
+      height: 2rem;
+      width: 80%;
+  }
+
+  .username-img{
+      left: 5px;
+      position: absolute;
+      bottom: 5px;
+  }
+
+  .floating-label {
+      top: 3px;
+  }
+
+  .password-view{
+      bottom: 5px;
+  }    
+
+  .msg{
+      font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .msg{
+      font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 770px){
+  .login-container{
+      width: 94vw;
+      display: flex;
+      justify-content: center;
+  }
+  
+
+  .imgslide{
+      display: none;
+  }
+
+  .custom-input{
+      min-width: 78vw;
+  }
+
+  .custom-input-2{
+      min-width: 39vw;
+  }
+
+  .login-form{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  /* .responsive-title{
+      display: block;
+  }
+
+  .logo-img{
+      display: none;
+  } */
+}

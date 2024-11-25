@@ -1,0 +1,151 @@
+.homepage{
+    /* background-color: rgb(33, 37, 41); */
+    width: 100%;
+    background-repeat: repeat-y;
+}
+
+.title{
+    font-size: 7vw;
+}
+
+.des{
+    font-size: 1vw;
+}
+
+.caption{
+    margin-left: 1.5vw;
+    margin-top: -0.5vw;
+    font-size: 1vw;
+}
+
+.desc{
+    justify-content: center;
+    min-width: 30vw;
+    max-width: 40vw;
+    min-height: 40vh;
+    padding-right: 3rem;
+    animation: slideLeft 1s ease-in forwards;
+}
+
+@keyframes slideLeft {
+    from{
+        opacity: 0;
+        transform: translateX(-300px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.image{
+    min-width: 700px;
+    min-height: 500px;
+    max-width: 700px;
+    max-height: 500px;
+    animation: slideRight 1s ease-in forwards;
+}
+
+@keyframes slideRight {
+    from{
+        opacity: 0;
+        transform: translateX(300px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.anim{
+    animation: appear 0.5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.posts{
+    padding-top: 7vw;
+    padding-inline: 6vw;
+}
+
+.filter{
+    gap: 2vw;
+}
+
+.loc{
+    background-color: black;
+    color: white;
+
+}
+
+.post-card{
+    gap: 3vw;
+    flex-wrap: wrap;
+}
+
+.no-post{
+    min-height: 50vh;
+    
+}
+
+.loading{
+    width: 3.25em;;
+    transform-origin: center;
+    animation: rotate4 2s linear infinite;
+}
+
+.home-circle{
+    fill: none;
+    stroke: black;
+    stroke-width: 2;
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: dash4 1.5s ease-in-out infinite;
+}
+
+
+.login-circle{
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: dash4 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate4{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash4 {
+    0%{
+        stroke-dasharray: 1,200;
+        stroke-dashoffset: 0;
+    }
+
+    50%{
+        stroke-dasharray: 90, 200;
+        stroke-dashoffset: -35px;
+    }
+
+    100%{
+        stroke-dashoffset: -125px;
+    }
+}
